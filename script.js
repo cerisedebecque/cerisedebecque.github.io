@@ -131,6 +131,7 @@ function renderProjects(filter = "Tout") {
   if (count) count.textContent = projects.length;
 }
 
+
 function openProject(project) {
   document.querySelector("#dialog-meta").textContent =
     `${project.category} / ${project.subtitle} / ${project.date}`;
@@ -142,13 +143,20 @@ function openProject(project) {
   const media = document.querySelector("#dialog-media");
   media.innerHTML = "";
 
-  if (project.video && youtubeEmbed(project.video)) {
-    const iframe = document.createElement("iframe");
-    iframe.src = youtubeEmbed(project.video);
-    iframe.title = `Vidéo : ${project.title}`;
-    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-    iframe.allowFullscreen = true;
-    media.appendChild(iframe);
+  if (project.category === "Reportage vidéo" && project.link) {
+    const postUrl = project.link.replace(/\/?$/, "/");
+    const embed = document.createElement("iframe");
+
+    embed.src = `${postUrl}embed/`;
+    embed.title = `Aperçu vidéo : ${project.title}`;
+    embed.width = "100%";
+    embed.height = "500";
+    embed.style.border = "0";
+    embed.setAttribute("scrolling", "no");
+    embed.setAttribute("allowtransparency", "true");
+    embed.setAttribute("allowfullscreen", "true");
+
+    media.appendChild(embed);
   } else if (project.image) {
     const img = document.createElement("img");
     img.src = project.image;
@@ -160,6 +168,11 @@ function openProject(project) {
 
   if (project.link) {
     link.href = project.link;
+    link.textContent = project.category === "Reportage vidéo"
+      ? "Voir le reportage sur Instagram"
+      : "Lire l'article sur Equinox";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
     link.hidden = false;
   } else {
     link.hidden = true;
@@ -168,6 +181,7 @@ function openProject(project) {
 
   dialog.showModal();
 }
+
 
 function youtubeEmbed(url) {
   try {
