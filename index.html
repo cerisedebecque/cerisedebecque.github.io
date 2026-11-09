@@ -1,32 +1,95 @@
-<!DOCTYPE html >
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-	<title>COOK@HOME</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio journalistique de Prénom Nom — reportage, enquête et audiovisuel.">
+  <title>Portfolio — Prénom Nom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-	<h1> <b> <span class="encadrer-un-contenu"> Cook@home </b> </span> </h1>
- 
-<h2> <u> les 3 meilleures recettes végétariennes à faire chez vous ! </u> </h2>
-<h3> salut, salut, cette semaine Cook@home vous propose de reproduire chez vous ces 3 recettes végétariennes plus ou moins complexes! 
-( Pour accéder aux recettes cliquez sur la photo du plat.)  </h3>
-	<p> <b> <u> poke bowl végétarien </b> </u> </p> 
-	<a href="page2.html">
-		<p> <img src="poke bowl.jpg" width="550" height="400"> </a> </p>
-	<p> <b> <u> pates au saumon et a l'ail </u> </b> </p>
-	<a href="page3.html">
-		<p> <img src="pates saumon ail.jpg" width="400" height="400"/> </a> </p>
-	<p> <b> <u> tartare de saumon, avocat </b> </u> </p>
-	<a href="page4.html">²
-		
-	<p> <img src="tartare saumon avocat.jpg" width="400" height="400" /> </a> </p>
-<br />
-<br />
-<br />
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Retour en haut">PN<span>.</span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#productions">Productions</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-link" href="LIEN_VERS_TON_CV" target="_blank" rel="noreferrer">Voir mon CV <span aria-hidden="true">↗</span></a>
+  </header>
 
-source:<br />
-(<a href="http://cosmictomatoes.fr/poke-bowl-au-saumon-et-sa-sauce-au-sesame/">poke bowl</a>) <br />
-(<a href="https://lecoupdegrace.ca/recette/pates-aux-asperges-et-au-saumon-fume/">pates saumon ail</a>)<br />
-(<a href="http://www.food4good.fr/tartare-saumon-sauvage-avocat/">tartare de saumon</a>)<br />
-</body> 
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow">PORTFOLIO JOURNALISTIQUE <span>—</span> 2026 / 2027</p>
+      <h1>Prénom <span>Nom</span></h1>
+      <p class="role">Journaliste plurimédia</p>
+      <p class="intro-copy">Reportage de terrain, enquête et production audiovisuelle.</p>
+      <a class="text-link" href="#productions">Découvrir mes productions <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="work-section" id="productions">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SÉLECTION DE TRAVAUX</p>
+          <h2>Productions</h2>
+        </div>
+        <p class="section-note">Reportages, sujets vidéo, articles et formats audio.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrer les productions">
+        <button class="filter is-active" data-filter="Tout" aria-pressed="true">Tout <span class="filter-count" id="count-all"></span></button>
+        <button class="filter" data-filter="Reportage vidéo" aria-pressed="false">Reportage vidéo</button>
+        <button class="filter" data-filter="Télévision" aria-pressed="false">Télévision</button>
+        <button class="filter" data-filter="Article" aria-pressed="false">Articles</button>
+        <button class="filter" data-filter="Audio" aria-pressed="false">Audio</button>
+      </div>
+
+      <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>Aucune production dans cette catégorie pour le moment.</p>
+    </section>
+
+    <section class="about-section" id="apropos">
+      <p class="eyebrow">À PROPOS</p>
+      <div class="about-content">
+        <h2>Journalisme de terrain<br>et formats plurimédias.</h2>
+        <div>
+          <p>Journaliste plurimédia, je m'intéresse particulièrement au reportage de terrain, à l'enquête et au traitement de l'actualité en vidéo. Ce portfolio rassemble une sélection de mes réalisations en presse écrite, web et audiovisuel.</p>
+          <a class="text-link" href="LIEN_VERS_TON_CV" target="_blank" rel="noreferrer">Consulter mon CV <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">CONTACT</p>
+        <h2>Échangeons.</h2>
+      </div>
+      <div class="contact-details">
+        <a href="mailto:TON.EMAIL@EXEMPLE.COM">TON.EMAIL@EXEMPLE.COM <span aria-hidden="true">↗</span></a>
+        <a href="LIEN_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Prénom Nom</span>
+    <a href="#top">Retour en haut ↑</a>
+  </footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" id="dialog-close" aria-label="Fermer">×</button>
+    <div id="dialog-media" class="dialog-media"></div>
+    <div class="dialog-body">
+      <p class="eyebrow" id="dialog-meta"></p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <p class="dialog-role" id="dialog-role"></p>
+      <a class="dialog-link" id="dialog-link" href="#" target="_blank" rel="noreferrer" hidden>Voir la production <span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
+</body>
 </html>
