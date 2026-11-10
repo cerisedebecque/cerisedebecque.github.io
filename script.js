@@ -5,6 +5,28 @@
 */
 
 const projects = [
+   {
+    title: "Espagne : comment fonctionnent les élections anticipées ?",
+    subtitle: "Equinox · Barcelone",
+    category: "Reportage vidéo",
+    date: "2026",
+    description: "Après l'annonce d'élections générales anticipées par Pedro Sánchez, explication du fonctionnement du scrutin espagnol et des enjeux politiques du rendez-vous électoral du 29 novembre.",
+    role: "Rôle : recherche, préparation, présentation et montage.",
+    image: "",
+    link: "https://www.instagram.com/p/DePUXV6l839/",
+    video: ""
+  },
+   {
+    title: "Halloween à Barcelone : les commerces renforcent leur sécurité",
+    subtitle: "Equinox · Barcelone",
+    category: "Reportage vidéo",
+    date: "2026",
+    description: "Après les dégradations survenues dans plusieurs commerces, les grandes enseignes du centre-ville renforcent leurs dispositifs de sécurité à l'approche d'Halloween, sur fond de nouvelles menaces relayées sur les réseaux sociaux.",
+    role: "Rôle : reportage de terrain, préparation, tournage et montage.",
+    image: "",
+    link: "https://www.instagram.com/p/DfIDVUFgXFX/",
+    video: ""
+  }, 
   {
     title: "Mercantic : le rendez-vous vintage du dimanche",
     subtitle: "Equinox · Barcelone",
@@ -25,28 +47,6 @@ const projects = [
     role: "Rôle : préparation, recherche, tournage et montage.",
     image: "",
     link: "https://www.instagram.com/p/DeuL98alezA/",
-    video: ""
-  },
-  {
-    title: "Espagne : comment fonctionnent les élections anticipées ?",
-    subtitle: "Equinox · Barcelone",
-    category: "Reportage vidéo",
-    date: "2026",
-    description: "Après l'annonce d'élections générales anticipées par Pedro Sánchez, explication du fonctionnement du scrutin espagnol et des enjeux politiques du rendez-vous électoral du 29 novembre.",
-    role: "Rôle : recherche, préparation, présentation et montage.",
-    image: "",
-    link: "https://www.instagram.com/p/DePUXV6l839/",
-    video: ""
-  },
-  {
-    title: "Halloween à Barcelone : les commerces renforcent leur sécurité",
-    subtitle: "Equinox · Barcelone",
-    category: "Reportage vidéo",
-    date: "2026",
-    description: "Après les dégradations survenues dans plusieurs commerces, les grandes enseignes du centre-ville renforcent leurs dispositifs de sécurité à l'approche d'Halloween, sur fond de nouvelles menaces relayées sur les réseaux sociaux.",
-    role: "Rôle : reportage de terrain, préparation, tournage et montage.",
-    image: "",
-    link: "https://www.instagram.com/p/DfIDVUFgXFX/",
     video: ""
   },
   {
@@ -71,6 +71,17 @@ const projects = [
     link: "https://www.equinoxmagazine.fr/2026/09/14/pourquoi-mon-experience-scolaire-a-t-elle-ete-differente-au-lycee-francais-de-barcelone/",
     video: ""
   },
+   {
+    title: "Une ancienne modératrice française de Meta à Barcelone se suicide, sa famille envisage des poursuites",
+    subtitle: "Equinox",
+    category: "Article",
+    date: "9 octobre 2026",
+    description: "Un article consacré au parcours d'une ancienne modératrice de contenus et aux questions soulevées par ses conditions de travail et les éventuelles poursuites engagées par sa famille.",
+    role: "Rôle : recherche, vérification des informations et rédaction.",
+    image: "",
+    link: "https://www.equinoxmagazine.fr/2026/10/09/une-ancienne-moderatrice-francaise-de-meta-a-barcelone-se-suicide-sa-famille-envisage-des-poursuites/",
+    video: ""
+  },
   {
     title: "Ces Français de Barcelone à qui on répond en anglais",
     subtitle: "Equinox",
@@ -81,19 +92,8 @@ const projects = [
     image: "",
     link: "https://www.equinoxmagazine.fr/2026/09/20/ces-francais-qui-parlent-espagnol-a-barcelone-mais-a-qui-on-repond-en-anglais/",
     video: ""
-  },
-  {
-    title: "Une ancienne modératrice française de Meta à Barcelone se suicide, sa famille envisage des poursuites",
-    subtitle: "Equinox",
-    category: "Article",
-    date: "9 octobre 2026",
-    description: "Un article consacré au parcours d'une ancienne modératrice de contenus et aux questions soulevées par ses conditions de travail et les éventuelles poursuites engagées par sa famille.",
-    role: "Rôle : recherche, vérification des informations et rédaction.",
-    image: "",
-    link: "https://www.equinoxmagazine.fr/2026/10/09/une-ancienne-moderatrice-francaise-de-meta-a-barcelone-se-suicide-sa-famille-envisage-des-poursuites/",
-    video: ""
-  }
-];
+  }; 
+] 
 
 const grid = document.querySelector("#project-grid");
 const emptyState = document.querySelector("#empty-state");
