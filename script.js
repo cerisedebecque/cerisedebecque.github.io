@@ -92,8 +92,8 @@ const projects = [
     image: "",
     link: "https://www.equinoxmagazine.fr/2026/09/20/ces-francais-qui-parlent-espagnol-a-barcelone-mais-a-qui-on-repond-en-anglais/",
     video: ""
-  }; 
-] 
+  } 
+];
 
 const grid = document.querySelector("#project-grid");
 const emptyState = document.querySelector("#empty-state");
