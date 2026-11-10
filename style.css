@@ -950,3 +950,21 @@ button:focus-visible {
     animation-iteration-count: 1 !important;
   }
 }
+/* CORRECTION DE LA GRILLE DES PRODUCTIONS */
+#project-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 30px 20px !important;
+  width: 100% !important;
+}
+
+#project-grid > * {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+@media (max-width: 520px) {
+  #project-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
