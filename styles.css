@@ -513,7 +513,7 @@ section {
   border: 0;
 }
 
-/* RESPONSIVE */
+/* TABLETTE : 3 COLONNES AUSSI */
 
 @media (max-width: 800px) {
   section {
@@ -521,7 +521,16 @@ section {
   }
 
   .projects-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px 14px;
+  }
+
+  .project-card h3 {
+    font-size: 19px;
+  }
+
+  .project-card p {
+    font-size: 13px;
   }
 
   .editorial-hero {
@@ -565,6 +574,8 @@ section {
   }
 }
 
+/* TELEPHONE : 1 COLONNE */
+
 @media (max-width: 520px) {
   .site-header {
     padding: 22px 5%;
@@ -604,6 +615,14 @@ section {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-card h3 {
+    font-size: 23px;
+  }
+
+  .project-card p {
+    font-size: 14px;
   }
 
   .section-heading {
