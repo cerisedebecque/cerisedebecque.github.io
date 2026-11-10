@@ -66,7 +66,7 @@ const projects = [
     date: "14 septembre 2026",
     description: "Retour sur une expérience scolaire au lycée français de Barcelone et sur les différences de parcours qu'elle met en lumière.",
     role: "Rôle : recherche, vérification des informations et rédaction.",
-    image: "",
+    image: "https://www.equinoxmagazine.fr/wp-content/uploads/2023/06/P1070715-scaled.jpg",
     link: "https://www.equinoxmagazine.fr/2026/09/14/pourquoi-mon-experience-scolaire-a-t-elle-ete-differente-au-lycee-francais-de-barcelone/",
     video: ""
   },
@@ -77,7 +77,7 @@ const projects = [
     date: "9 octobre 2026",
     description: "Un article consacré au parcours d'une ancienne modératrice de contenus et aux questions soulevées par ses conditions de travail et les éventuelles poursuites engagées par sa famille.",
     role: "Rôle : recherche, vérification des informations et rédaction.",
-    image: "",
+    image: "https://www.equinoxmagazine.fr/wp-content/uploads/2023/10/torre-glories-hotel-novotel-i-campus.jpg",
     link: "https://www.equinoxmagazine.fr/2026/10/09/une-ancienne-moderatrice-francaise-de-meta-a-barcelone-se-suicide-sa-famille-envisage-des-poursuites/",
     video: ""
   },
@@ -88,7 +88,7 @@ const projects = [
     date: "20 septembre 2026",
     description: "À travers plusieurs témoignages, un article sur la place de l'espagnol dans le quotidien des Français installés à Barcelone et les questions d'intégration que cela soulève.",
     role: "Rôle : recherche, recueil de témoignages et rédaction.",
-    image: "",
+    image: "https://www.equinoxmagazine.fr/wp-content/uploads/2025/07/DSC04853-scaled.jpg",
     link: "https://www.equinoxmagazine.fr/2026/09/20/ces-francais-qui-parlent-espagnol-a-barcelone-mais-a-qui-on-repond-en-anglais/",
     video: ""
   },
