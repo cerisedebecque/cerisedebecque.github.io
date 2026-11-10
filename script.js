@@ -11,7 +11,7 @@ const projects = [
     date: "2026",
     description: "Après l'annonce d'élections générales anticipées par Pedro Sánchez, explication du fonctionnement du scrutin espagnol et des enjeux politiques du rendez-vous électoral du 29 novembre.",
     role: "Rôle : recherche, préparation, présentation et montage.",
-    image: "",
+    image: "elections.jpg",
     link: "https://www.instagram.com/p/DePUXV6l839/",
     video: ""
   },
@@ -22,7 +22,7 @@ const projects = [
     date: "2026",
     description: "Après les dégradations survenues dans plusieurs commerces, les grandes enseignes du centre-ville renforcent leurs dispositifs de sécurité à l'approche d'Halloween, sur fond de nouvelles menaces relayées sur les réseaux sociaux.",
     role: "Rôle : reportage de terrain, préparation, tournage et montage.",
-    image: "",
+    image: "emeute.jpg",
     link: "https://www.instagram.com/p/DfIDVUFgXFX/",
     video: ""
   },
@@ -33,7 +33,7 @@ const projects = [
     date: "2026",
     description: "Découverte de Mercantic, un marché vintage situé à Sant Cugat del Vallès, aux portes de Barcelone. Un reportage de terrain à la rencontre d'un lieu mêlant brocante, commerces, restauration et événements culturels.",
     role: "Rôle : préparation, reportage, tournage et montage.",
-    image: "",
+    image: "mercantic.jpg",
     link: "https://www.instagram.com/p/DezXsovD1r4/",
     video: ""
   },
@@ -44,7 +44,7 @@ const projects = [
     date: "2026",
     description: "La mairie de Barcelone met en place des bons de réduction pour encourager les achats dans les commerces de proximité. Présentation du dispositif, de ses modalités et de ses objectifs.",
     role: "Rôle : préparation, recherche, tournage et montage.",
-    image: "",
+    image: "bonus.jpg",
     link: "https://www.instagram.com/p/DeuL98alezA/",
     video: ""
   },
@@ -55,7 +55,7 @@ const projects = [
     date: "2026",
     description: "Sous la Plaça de la Vila de Madrid se trouve une ancienne nécropole romaine, témoin de près de 2 000 ans d'histoire. Avec l'écrivain et conteur Pierre Lunel, découverte de ce patrimoine méconnu au cœur de Barcelone.",
     role: "Rôle : préparation, reportage, interview, tournage et montage.",
-    image: "",
+    image: "romain.jpg",
     link: "https://www.instagram.com/p/DfNOM52DYMl/",
     video: ""
   },
