@@ -315,13 +315,21 @@ section {
   border-color: var(--ink);
 }
 
+/* GRILLE : 3 COLONNES */
+
+#productions .projects-grid,
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 35px 22px;
+  gap: 30px 20px;
+  width: 100%;
 }
 
+#productions .project-card,
 .project-card {
+  display: block;
+  width: 100%;
+  min-width: 0;
   cursor: pointer;
   transition: transform 0.25s ease;
 }
@@ -330,12 +338,14 @@ section {
   transform: translateY(-5px);
 }
 
+#productions .project-image,
 .project-image {
+  display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: rgba(183, 124, 140, 0.14);
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 .project-image img {
@@ -362,7 +372,7 @@ section {
 .project-card h3 {
   margin: 0 0 9px;
   font-family: var(--font);
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.035em;
@@ -513,24 +523,25 @@ section {
   border: 0;
 }
 
-/* TABLETTE : 3 COLONNES AUSSI */
+/* TABLETTE : TOUJOURS 3 COLONNES */
 
 @media (max-width: 800px) {
   section {
     padding: 75px 6%;
   }
 
+  #productions .projects-grid,
   .projects-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px 14px;
+    gap: 22px 12px;
   }
 
   .project-card h3 {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .project-card p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .editorial-hero {
@@ -574,7 +585,7 @@ section {
   }
 }
 
-/* TELEPHONE : 1 COLONNE */
+/* TELEPHONE : UNE COLONNE */
 
 @media (max-width: 520px) {
   .site-header {
@@ -613,8 +624,10 @@ section {
     gap: 18px;
   }
 
+  #productions .projects-grid,
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .project-card h3 {
@@ -637,30 +650,5 @@ section {
 
   .project-dialog {
     padding: 22px;
-  }
-}
-
-/* FORCER 3 PRODUCTIONS PAR LIGNE */
-
-#productions .projects-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 25px 18px !important;
-}
-
-#productions .project-card {
-  width: 100%;
-  min-width: 0;
-}
-
-#productions .project-image {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-}
-
-/* TELEPHONE : 1 COLONNE */
-@media (max-width: 520px) {
-  #productions .projects-grid {
-    grid-template-columns: 1fr !important;
   }
 }
