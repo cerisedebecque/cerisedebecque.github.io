@@ -1,11 +1,21 @@
 
 /*
-  Productions du portfolio de Cerise de Becque.
-  Les images seront ajoutées dans un second temps.
+  Productions du portfolio de CERISE DE BECQUE.
 */
 
 const projects = [
-   {
+  {
+    title: "Inexpliqué : les pyramides d'Égypte",
+    subtitle: "Podcast personnel",
+    category: "Podcast",
+    date: "Date à préciser",
+    description: "Bienvenue dans Inexpliqué, le podcast qui explore les mystères et les zones d’ombre de notre histoire. Aujourd’hui : les pyramides d’Égypte.",
+    role: "Rôle : création du podcast.",
+    image: "https://i9.ytimg.com/vi_webp/auqAvE_ktUg/mq2.webp?sqp=CKSJztcG-oaymwEnCMACELQB8quKqQMb8AEB-AH-CYAC0AWKAg0IABABGIwBIFEoFTAP&rs=AOn4CLDdjN2cYt8BgaVPrSgvh3BDWP1Y-Q",
+    link: "https://youtu.be/auqAvE_ktUg",
+    video: "https://youtu.be/auqAvE_ktUg"
+  },
+  {
     title: "Espagne : comment fonctionnent les élections anticipées ?",
     subtitle: "Equinox · Barcelone",
     category: "Reportage vidéo",
@@ -16,7 +26,7 @@ const projects = [
     link: "https://www.instagram.com/p/DePUXV6l839/",
     video: ""
   },
-   {
+  {
     title: "Halloween à Barcelone : les commerces renforcent leur sécurité",
     subtitle: "Equinox · Barcelone",
     category: "Reportage vidéo",
@@ -26,7 +36,7 @@ const projects = [
     image: "",
     link: "https://www.instagram.com/p/DfIDVUFgXFX/",
     video: ""
-  }, 
+  },
   {
     title: "Mercantic : le rendez-vous vintage du dimanche",
     subtitle: "Equinox · Barcelone",
@@ -71,7 +81,7 @@ const projects = [
     link: "https://www.equinoxmagazine.fr/2026/09/14/pourquoi-mon-experience-scolaire-a-t-elle-ete-differente-au-lycee-francais-de-barcelone/",
     video: ""
   },
-   {
+  {
     title: "Une ancienne modératrice française de Meta à Barcelone se suicide, sa famille envisage des poursuites",
     subtitle: "Equinox",
     category: "Article",
@@ -92,7 +102,7 @@ const projects = [
     image: "",
     link: "https://www.equinoxmagazine.fr/2026/09/20/ces-francais-qui-parlent-espagnol-a-barcelone-mais-a-qui-on-repond-en-anglais/",
     video: ""
-  } 
+  }
 ];
 
 const grid = document.querySelector("#project-grid");
@@ -131,7 +141,6 @@ function renderProjects(filter = "Tout") {
   if (count) count.textContent = projects.length;
 }
 
-
 function openProject(project) {
   document.querySelector("#dialog-meta").textContent =
     `${project.category} / ${project.subtitle} / ${project.date}`;
@@ -157,6 +166,20 @@ function openProject(project) {
     embed.setAttribute("allowfullscreen", "true");
 
     media.appendChild(embed);
+
+  } else if (project.category === "Podcast" && project.video) {
+    const embed = document.createElement("iframe");
+
+    embed.src = youtubeEmbed(project.video);
+    embed.title = `Écouter le podcast : ${project.title}`;
+    embed.width = "100%";
+    embed.height = "405";
+    embed.style.border = "0";
+    embed.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+    embed.setAttribute("allowfullscreen", "true");
+
+    media.appendChild(embed);
+
   } else if (project.image) {
     const img = document.createElement("img");
     img.src = project.image;
@@ -168,9 +191,15 @@ function openProject(project) {
 
   if (project.link) {
     link.href = project.link;
-    link.textContent = project.category === "Reportage vidéo"
-      ? "Voir le reportage sur Instagram"
-      : "Lire l'article sur Equinox";
+
+    if (project.category === "Reportage vidéo") {
+      link.textContent = "Voir le reportage sur Instagram";
+    } else if (project.category === "Podcast") {
+      link.textContent = "Écouter le podcast sur YouTube";
+    } else {
+      link.textContent = "Lire l'article sur Equinox";
+    }
+
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.hidden = false;
@@ -181,7 +210,6 @@ function openProject(project) {
 
   dialog.showModal();
 }
-
 
 function youtubeEmbed(url) {
   try {
