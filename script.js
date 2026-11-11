@@ -99,8 +99,8 @@ const projects = [
     date: "18 décembre 2025",
     description: "Bienvenue dans Inexpliqué, le podcast qui explore les mystères et les zones d’ombre de notre histoire. Aujourd’hui : les pyramides d’Égypte.",
     role: "Rôle : création du podcast.",
-    image: "https://i9.ytimg.com/vi_webp/auqAvE_ktUg/mq2.webp?sqp=CKSJztcG-oaymwEnCMACELQB8quKqQMb8AEB-AH-CYAC0AWKAg0IABABGIwBIFEoFTAP&rs=AOn4CLDdjN2cYt8BgaVPrSgvh3BDWP1Y-Q",
-    link: "https://youtu.be/auqAvE_ktUg",
+image: "https://img.youtube.com/vi/auqAvE_ktUg/hqdefault.jpg",
+     link: "https://youtu.be/auqAvE_ktUg",
     video: "https://youtu.be/auqAvE_ktUg"
   },
 ];
