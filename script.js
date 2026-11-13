@@ -145,9 +145,13 @@ function renderProjects(filter = "Tout") {
       <span class="project-subtitle">${escapeHTML(project.subtitle)}</span>
     `;
 
-    card.addEventListener("click", () => openProject(project));
-    grid.appendChild(card);
-  });
+   card.addEventListener("click", () => {
+  if (project.directLink && project.link) {
+    window.open(project.link, "_blank", "noopener,noreferrer");
+  } else {
+    openProject(project);
+  }
+});
 
   const count = document.querySelector("#count-all");
   if (count) count.textContent = projects.length;
