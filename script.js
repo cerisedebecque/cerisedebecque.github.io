@@ -103,6 +103,18 @@ image: "https://img.youtube.com/vi/auqAvE_ktUg/hqdefault.jpg",
      link: "https://youtu.be/auqAvE_ktUg",
     video: "https://youtu.be/auqAvE_ktUg"
   },
+    {
+    title: "Brèves TOITURE Magazine — L'artisan couvreur",
+    subtitle: "Bois-News Média · ÉTÉ 2024",
+    category: "Article",
+    date: "Juin-Juillet-Août 2024",
+    description: "Brèves spécialisées publiées pendant mon premier stage chez Bois-News Média.",
+    role: "Réalisation de productions journalistiques au format papier.",
+    image: "bois-news-miniature.jpg",
+    link: "bois-news-media.pdf",
+    video: "",
+    directLink: true
+  },
 ];
 
 const grid = document.querySelector("#project-grid");
