@@ -145,13 +145,16 @@ function renderProjects(filter = "Tout") {
       <span class="project-subtitle">${escapeHTML(project.subtitle)}</span>
     `;
 
-   card.addEventListener("click", () => {
-  if (project.directLink && project.link) {
-    window.open(project.link, "_blank", "noopener,noreferrer");
-  } else {
-    openProject(project);
-  }
-});
+       card.addEventListener("click", () => {
+      if (project.directLink && project.link) {
+        window.open(project.link, "_blank", "noopener,noreferrer");
+      } else {
+        openProject(project);
+      }
+    });
+
+    grid.appendChild(card);
+  });
 
   const count = document.querySelector("#count-all");
   if (count) count.textContent = projects.length;
