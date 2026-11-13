@@ -79,8 +79,7 @@ const projects = [
     subtitle: "Equinox",
     category: "Article",
     date: "20 septembre 2026",
-    description: "À travers plusieurs témoignages, un article sur la place de l'espagnol dans le quotidien des Français installés à Barcelone et les questions d'intégration que cela soulève.",
-    image: "https://www.equinoxmagazine.fr/wp-content/uploads/2025/07/DSC04853-scaled.jpg",
+"À Barcelone, la scène est familière à de nombreux Français, parfois installés depuis longtemps, racontent être régulièrement abordés en anglais plutôt qu'en français ou en espagnol. Témoignages.    image: "https://www.equinoxmagazine.fr/wp-content/uploads/2025/07/DSC04853-scaled.jpg",
     link: "https://www.equinoxmagazine.fr/2026/09/20/ces-francais-qui-parlent-espagnol-a-barcelone-mais-a-qui-on-repond-en-anglais/",
     video: ""
   },
@@ -89,8 +88,7 @@ const projects = [
     subtitle: "Podcast personnel",
     category: "Podcast",
     date: "18 décembre 2025",
-    description: "Bienvenue dans Inexpliqué, le podcast qui explore les mystères et les zones d’ombre de notre histoire. Aujourd’hui : les pyramides d’Égypte.",
-    role: "Rôle : création du podcast.",
+    description: "Bienvenue dans Inexpliqué, le podcast qui explore les mystères et les zones d’ombre de notre histoire. Épisode 1 : les pyramides d’Égypte.",
 image: "https://img.youtube.com/vi/auqAvE_ktUg/hqdefault.jpg",
      link: "https://youtu.be/auqAvE_ktUg",
     video: "https://youtu.be/auqAvE_ktUg"
