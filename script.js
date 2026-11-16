@@ -90,7 +90,7 @@ description: "À Barcelone, la scène est familière à de nombreux Français, p
     category: "Article",
     date: "15 DÉCEMBRE 2025",
 description: "À Barcelone, la scène est familière à de nombreux Français, parfois installés depuis longtemps, racontent être régulièrement abordés en anglais plutôt qu'en français ou en espagnol. Témoignages.",   
-  image: "",
+  image: "sana.jpg",
     link: "portrait-sana.pdf",
     video: ""
       },
